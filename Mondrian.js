@@ -1,35 +1,31 @@
 function setup() {
   createCanvas(400, 400);
-  strokeCap(SQUARE);
+  noStroke()
 }
 
 function draw() {
-  background(240);
-  noStroke();
+  background(0);
 
-  // Red square
-  fill(255, 0, 0);
-  rect(80, 0, 320, 320);
-
-  // Blue square
-  fill(0, 0, 255);
-  rect(0, 320, 80, 80);
-
-  // Yellow square
-  fill(255, 255, 0);
-  rect(370, 360, 30, 40);
-
-  stroke(0);
-  strokeWeight(13);
-  line(80, 0, 80, 400); // left line  
-  line(0, 320, 400, 320); // middle line
-
-  line(370, 320, 370, 400); // right line
-
-  strokeWeight(14);
-  line(370, 360, 400, 360); // bottom
-
-  strokeWeight(21);
-  line(0, 150, 80, 150); // top
+  //blue squares
+  fill(153, 211, 231);
+  rect(150, 0, 200, 200);// top
+  rect(290, 310, 100, 90);// bottom
+  rect(150, 335, 40, 65);// small
+ 
+  //pink squares
+  fill(236, 167, 173);
+  rect(360, 0, 40, 300);// right
+  rect(40, 220, 95, 180);// left
+  rect(200, 335, 70, 65)// small
+ 
+  //white squares
+  fill(220);
+  rect(0, 0, 135, 200);// left
+  rect(150, 220, 200, 80);// right
+  
+  //yellow squares
+  fill(235, 210 ,156);
+  rect(150, 310, 120, 15);// right
+  rect(0, 220, 30, 180)// left
 
 }
